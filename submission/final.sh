@@ -22,14 +22,14 @@ echo "----------------------------------------"
 echo "Create a wallet named 'btrustwallet' to track your Bitcoin exploration"
 # STUDENT TASK: Use bitcoin-cli -regtest to create a wallet named "btrustwallet"
 # WRITE YOUR SOLUTION BELOW:
-bitcoin-cli -regtest createwallet "btrustwallet"
+ensure_wallet_available "btrustwallet"
 
 
 # Create a second wallet that will hold the treasure
 echo "Now, create another wallet called 'treasurewallet' to fund your adventure"
 # STUDENT TASK: Create another wallet called "treasurewallet"
 # WRITE YOUR SOLUTION BELOW:
-bitcoin-cli -regtest createwallet "treasurewallet"
+ensure_wallet_available "treasurewallet"
 
 
 # Generate an address for mining in the treasure wallet
